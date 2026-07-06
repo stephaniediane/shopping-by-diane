@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING BY DIANE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="acccueil.css">
+  
+</head>
+<body>
+  <header class="head">
+    <div class="entete">
+        <h1><a href=""></a> </h1>
+        <img src="logo.png" alt="mon logo">
+        <h1 class="slogan"> Sublimez votre quotidien,un detail a la fois</h1>
+        <p>Contactez nous : 675727151</p>
+    </div>
+      <nav class="navigation">
+        <div class="nav">
+          <ul class="bar">
+              <li>ACCUEIL</li>
+              <li> <a href="#">PARFUMS</a> </li>
+              <li> <a href="#">BIJOUX</a> </li>
+              <li> <a href="#">ACCESSOIRES</a> </li> 
+          </ul> 
+        </div>
+      </nav>
+   
+    <div class="caroussel">
+      <button id="avant"><i class="fa-solid fa-chevron-left"></i></button>
+      <img id="slide" src="parfum.jpg" alt="">
+       <button id="apres"><i class="fa-solid fa-chevron-right"></i>
+       </button>
+    </div>
+  </header>
+  <script src="accueil.js">
+    const images =["mousse.jpg","parfums.jpg",
+    "gel de douche.jpg",
+    "parfum.jpg"
+];
+let index=0;
+const slide =document.getElementById("slide");
+document.getElementById("avant").onclick=function(){
+    index++;
+    if (index >= images.length){
+        index=0;
+    }
+    slide.src =images[index];
+}
+document.getElementById("apres").onclick=function(){
+    index--;
+    if (index <0){
+        index =images.length - 1;
+    }
+    slide.src=images[index];
+}
+  </script>
+</body>
+</html>

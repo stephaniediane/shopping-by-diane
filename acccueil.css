@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(112, 95, 98);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    display: contents;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.entete{
+    display: flex;
+    gap: 10%;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    padding: auto;
+    
+}
+.entete,h1{
+    text-align: center;
+}
+img{
+    width:10%;
+    border-radius:100%;
+    border: 1px solid white;
+    margin-bottom: 40px;
+   
+}
+.slogan{
+    padding-left: 20px;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: flex-start;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 15px;
+   padding: 15px;
+   background: pink;
+}
+.bar{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 80%;
+    position: relative;
+    margin: 10;
+    padding: 0;
+}
+.bar a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.bar a:hover{
+    color: #d18b2c;
+}
+.carrousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+#slide{
+    width: 10%;
+    height: 1%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 20%;
+    border: 2px solid pink;
+    
+}
+button{
+height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
